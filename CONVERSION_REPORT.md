@@ -19,14 +19,18 @@ The source was surveyed across all 96 physical PDF pages. A 22-page canonical
 pilot covered front matter, chapter openers, regular lessons, activities,
 tables, illustrations, summaries, and final pages. The final packaged book was
 then opened in the ADT reader and every page was captured in sequence from page
-1 through page 96. All pages loaded, retained the source page frame and running
-furniture, and exposed semantic text and reader navigation.
+1 through page 96. All pages loaded, exposed semantic text, and passed reader
+navigation checks.
 
-The print PDF contains unusually fragmented InDesign artwork. ADT Studio was
-adjusted locally to batch large caption sets and to avoid duplicate semantic
-paint over composite raster regions. Partial composite crops are clipped past
-crossing semantic line boxes, including a small antialiasing guard; the
-previous exercise-line overlap was removed and verified in the live reader.
+The print PDF contains unusually fragmented InDesign artwork: individual
+header and footer designs contain hundreds of overlapping masks and image
+shards. Browser compositing of those fragments caused a clipped cover title and
+duplicated dark furniture. The final fixed-layout package therefore uses each
+ADT-extracted full-page render as the authoritative visual layer and keeps the
+positioned semantic text as an invisible accessibility layer. All 96 bundled
+page rasters were byte-compared with their extracted source renders, and all
+96 matched. A second 96-page browser pass confirmed that every page has both
+the authoritative visual layer and semantic text.
 
 Speech generation was excluded for this conversion profile. The HTML text,
 image captions, glossary, and accessibility assessment remain present.

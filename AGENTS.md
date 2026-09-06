@@ -228,7 +228,7 @@ A flat `Record<textId, string>` containing every piece of text in the book. Exam
 ```json
 {
   "pg001_gp001_tx001": "",
-  "pg001_im001": "Certificate of Approval No. 1583 from the United Republic of Tanzania Ministry of Education, Science and Technology approving English for Secondary Schools Student’s Book Form Two, published by Tanzania Institute of Education, on 11th September 2024, signed by the Commissioner for Education, Dr Lyabwene M. Mtahabwa",
+  "pg001_im001": "",
   "gl001": "abducted",
   "gl001_def": "taken away illegally by force"
 }

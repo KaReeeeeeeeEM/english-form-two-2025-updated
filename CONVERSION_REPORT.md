@@ -11,7 +11,7 @@
 - Glossary generation: **10/10 batches**
 - Accessibility assessment: **96/96**
 - Packaged entry point: `books/english-form-two-2025-updated/adt/index.html`
-- Published reader: <http://reelma.me/english-form-two-2025-updated/>
+- Published reader: <https://kareeeeeeeeem.github.io/english-form-two-2025-updated/>
 
 ## Audit
 

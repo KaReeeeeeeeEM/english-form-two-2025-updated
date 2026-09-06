@@ -11,6 +11,7 @@
 - Glossary generation: **10/10 batches**
 - Accessibility assessment: **96/96**
 - Packaged entry point: `books/english-form-two-2025-updated/adt/index.html`
+- Published reader: <http://reelma.me/english-form-two-2025-updated/>
 
 ## Audit
 
@@ -23,9 +24,9 @@ furniture, and exposed semantic text and reader navigation.
 
 The print PDF contains unusually fragmented InDesign artwork. ADT Studio was
 adjusted locally to batch large caption sets and to avoid duplicate semantic
-paint over composite raster regions. A few isolated exercise lines retain
-minor raster/semantic overlap; this is recorded as a non-blocking fidelity
-limitation rather than concealed.
+paint over composite raster regions. Partial composite crops are clipped past
+crossing semantic line boxes, including a small antialiasing guard; the
+previous exercise-line overlap was removed and verified in the live reader.
 
 Speech generation was excluded for this conversion profile. The HTML text,
 image captions, glossary, and accessibility assessment remain present.

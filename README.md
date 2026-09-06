@@ -8,6 +8,7 @@ project-local `adt-book-conversion` skill.
 - Output: `books/english-form-two-2025-updated/adt/index.html` (local, ignored)
 - ADT database/cache/assets: `books/english-form-two-2025-updated/` (local, ignored)
 - Conversion report: [`CONVERSION_REPORT.md`](CONVERSION_REPORT.md)
+- Published book: [Open the accessible reader](http://reelma.me/english-form-two-2025-updated/)
 
 The source PDF and generated book data remain outside version control because
 they are large production artifacts. The repository tracks the conversion

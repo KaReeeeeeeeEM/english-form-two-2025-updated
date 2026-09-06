@@ -1,0 +1,12 @@
+# Local source and generated book data
+*.pdf
+books/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Common tooling output
+node_modules/
+.DS_Store

@@ -39,8 +39,15 @@ Roman folios use explicit spoken labels (for example, `v` as “Roman numeral
 5” and `vi` as “Roman numeral 6”). A packaged-runtime scan found no exposed
 running furniture or printed page numbers.
 
-Speech generation was excluded for this conversion profile. The HTML text,
-image captions, glossary, and accessibility assessment remain present.
+Image descriptions are included in read-aloud and enabled by default for new
+reader sessions. The package contains audio for all 92 meaningful raster-image
+descriptions across 29 illustrated pages; decorative page crops, running
+furniture, and vector ornaments are not narrated. The cover Certificate of
+Approval is described in detail, including certificate number 1583, issuing
+ministry, publication title, author and publisher, ISBN, approval date,
+curriculum context, and signatory. The packaged certificate description has a
+matching audio file and remains available as image alternative text without
+duplicating the authoritative visual page layer.
 
 ## Local artifacts
 

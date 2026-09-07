@@ -40,8 +40,9 @@ each page contains exactly one presentation-only top and bottom ornament, no
 extracted image competes inside either region, and no horizontal overflow
 remains. A final source-to-browser contact-sheet review corrected the shared
 trim inset, chapter-field depth, footer peak, burgundy cap, white separator
-curve, and production-strip clearance. The unique cover is excluded from this
-recurring rule.
+curve, alternating odd/even colour direction, registration tabs, Arabic and
+Roman folio rings, and production-strip clearance. The unique cover is
+excluded from this recurring rule.
 
 The read-aloud accessibility pass excludes repeated running-title decoration,
 printer furniture, and standalone printed folios from narration on all 96

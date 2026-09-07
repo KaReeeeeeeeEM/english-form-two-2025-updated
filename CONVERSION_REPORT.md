@@ -33,12 +33,11 @@ zero full-page image references, zero page-raster markers, zero composite
 page-crop nodes, and zero transparent paragraphs across all 96 pages. The
 reader exposes 2,096 visible positioned text elements.
 
-The recurring top and bottom master-page decorations are reconstructed as one
-clean SVG band per region instead of replaying hundreds of overlapping
-InDesign vector and raster fragments. Pages 2–96 were browser-scanned: every
-page contains exactly two silent decorative SVG bands, no extracted image
-competing inside either band, and no horizontal overflow. The unique cover is
-excluded from this recurring-decoration rule.
+The recurring top and bottom master-page decorations use tightly cropped
+source-authored bands instead of replaying hundreds of overlapping InDesign
+vector and raster fragments. Pages 2–96 were browser-scanned: each band is
+presentation-only, no extracted image competes inside it, and no horizontal
+overflow remains. The unique cover is excluded from this recurring rule.
 
 The read-aloud accessibility pass excludes repeated running-title decoration,
 printer furniture, and standalone printed folios from narration on all 96
@@ -47,14 +46,15 @@ Roman folios use explicit spoken labels (for example, `v` as “Roman numeral
 5” and `vi` as “Roman numeral 6”). A packaged-runtime scan found no exposed
 running furniture or printed page numbers.
 
-Image descriptions are included in read-aloud and enabled by default for new
-reader sessions. The package contains audio for all 92 meaningful raster-image
-descriptions across 29 illustrated pages; decorative page crops, running
-furniture, and vector ornaments are not narrated. The cover Certificate of
-Approval is described in detail, including certificate number 1583, issuing
-ministry, publication title, author and publisher, ISBN, approval date,
-curriculum context, and signatory. The packaged certificate description has a
-matching audio file and remains available as image alternative text.
+Image descriptions are included in read-aloud. The package contains 1,633
+audio tracks for speakable text and meaningful image descriptions; only 15
+punctuation-only ornaments are intentionally omitted. Decorative page crops,
+running furniture, and vector ornaments are not narrated. The cover
+Certificate of Approval is described in detail, including certificate number
+1583, issuing ministry, publication title, author and publisher, ISBN,
+approval date, curriculum context, and signatory. The packaged certificate
+description has a matching audio file and remains available as image
+alternative text.
 
 ## Local artifacts
 

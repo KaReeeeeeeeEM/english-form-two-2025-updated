@@ -116,6 +116,10 @@
     label.textContent = match[1].trimEnd()
     number.textContent = match[3]
     label.style.cssText = inherited
+    if (/^(?:Chapter\b|Bibliography\b)/i.test(label.textContent)) {
+      label.style.color = "#ed008c"
+      label.style.fontWeight = "bold"
+    }
     leader.style.cssText = inherited + ";flex:1 1 auto;border-bottom:1px dotted currentColor;margin:0 .18em .23em;min-width:.5em"
     leader.className = "adt-toc-leader"
     number.style.cssText = inherited + ";flex:0 0 auto;text-align:right"

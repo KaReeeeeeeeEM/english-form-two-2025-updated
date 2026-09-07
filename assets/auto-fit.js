@@ -148,7 +148,6 @@
       var tr = text[i].getBoundingClientRect()
       for (var j = 0; j < images.length; j++) {
         if (images[j].dataset.adtRasterPartial === "1") continue
-        var description = normalizeText(images[j].getAttribute("alt"))
         var ir = images[j].getBoundingClientRect()
         // getBoundingClientRect() reports the element's unclipped box. The
         // fixed-layout renderer clips composite crops to exclude semantic
@@ -177,13 +176,15 @@
         var verticalCoverage = intersectionHeight / Math.max(1, tr.height)
         var fullyContained = verticalCoverage >= 0.75 && horizontalCoverage >= 0.5
         var rasterizedText = images[j].dataset.adtRasterText === "1"
-        var evidencedByCaption = phrase.length >= 4 && description.includes(phrase)
         // A partial page crop can overlap the centre of a longer semantic
         // line while omitting its beginning or end. Hiding that paragraph
         // makes the omitted fragment disappear. Raster crops suppress text
-        // only when they contain the whole text box; a matching caption is
-        // still independent evidence that a complete duplicate is painted.
-        if (!overlaps || (!(rasterizedText && fullyContained) && !evidencedByCaption)) continue
+        // only when they contain the whole text box. Genuine illustrations
+        // can have descriptive alt text containing nearby page words (for
+        // example a certificate mentioning the book title or publisher);
+        // caption wording alone is not evidence that those positioned words
+        // are painted at the same location inside the image.
+        if (!overlaps || !(rasterizedText && fullyContained)) continue
         text[i].style.opacity = "0"
         text[i].dataset.adtRasterDuplicate = "1"
         break

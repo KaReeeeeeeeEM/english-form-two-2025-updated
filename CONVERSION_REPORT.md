@@ -33,6 +33,13 @@ zero full-page image references, zero page-raster markers, zero composite
 page-crop nodes, and zero transparent paragraphs across all 96 pages. The
 reader exposes 2,096 visible positioned text elements.
 
+The recurring top and bottom master-page decorations are reconstructed as one
+clean SVG band per region instead of replaying hundreds of overlapping
+InDesign vector and raster fragments. Pages 2–96 were browser-scanned: every
+page contains exactly two silent decorative SVG bands, no extracted image
+competing inside either band, and no horizontal overflow. The unique cover is
+excluded from this recurring-decoration rule.
+
 The read-aloud accessibility pass excludes repeated running-title decoration,
 printer furniture, and standalone printed folios from narration on all 96
 pages. Table-of-contents dot leaders remain visual but are silent; terminal

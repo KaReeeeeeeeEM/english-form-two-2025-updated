@@ -13,9 +13,9 @@
 
   <organizations default="ADT_ORG">
     <organization identifier="ADT_ORG">
-      <title>English for Secondary Schools: Student’s Book Form Two</title>
+      <title>English for Secondary Schools Student’s Book Form Two</title>
       <item identifier="ITEM_1" identifierref="RESOURCE_1">
-        <title>English for Secondary Schools: Student’s Book Form Two</title>
+        <title>English for Secondary Schools Student’s Book Form Two</title>
       </item>
     </organization>
   </organizations>

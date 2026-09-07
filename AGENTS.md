@@ -1,10 +1,10 @@
-# English for Secondary Schools: Student’s Book Form Two — ADT Bundle Reference
+# English for Secondary Schools Student’s Book Form Two — ADT Bundle Reference
 
 This document describes the structure of this Accessible Digital Textbook (ADT) bundle. Use it to orient yourself when doing post-processing.
 
 ## About This Book
 
-**English for Secondary Schools: Student’s Book Form Two** — This is an English language textbook for Form Two secondary students in Tanzania, roughly equivalent to lower secondary or early teen learners. Written in English and published by the Tanzania Institute of Education, it develops the four core language skills—listening, speaking, reading, and writing—through practical activities on oral communication, vocabulary, grammar, comprehension, and written responses. The book uses a competency-based, activity-driven approach with real-life Tanzanian contexts, encouraging discussion, summarising, critical thinking, and respectful communication on themes such as education, health, environment, citizenship, and everyday life.
+**English for Secondary Schools Student’s Book Form Two** — This is an English language textbook for Form Two secondary students in Tanzania, roughly equivalent to lower secondary or early teen learners. Written in English and published by the Tanzania Institute of Education, it develops the four core language skills—listening, speaking, reading, and writing—through practical activities on oral communication, vocabulary, grammar, comprehension, and written responses. The book uses a competency-based, activity-driven approach with real-life Tanzanian contexts, encouraging discussion, summarising, critical thinking, and respectful communication on themes such as education, health, environment, citizenship, and everyday life.
 
 - **Source language**: `en`
 - **Available languages in this bundle**: `en`
@@ -228,7 +228,7 @@ A flat `Record<textId, string>` containing every piece of text in the book. Exam
 ```json
 {
   "pg001_gp001_tx001": "",
-  "pg001_im001": "",
+  "pg001_im001": "A green Certificate of Approval numbered 1583, issued by the United Republic of Tanzania, Ministry of Education, Science and Technology. It identifies the publication as English for Secondary Schools Student’s Book Form Two, published and authored by the Tanzania Institute of Education, ISBN 978-9912-756-19-9. The certificate states that the book was approved by the Ministry of Education, Science and Technology on 11 September 2024 as a textbook for Form Two students in Tanzanian secondary schools under the 2023 syllabus. It is signed by Dr Lyabwene M. Mtahabwa, Commissioner for Education.",
   "gl001": "abducted",
   "gl001_def": "taken away illegally by force"
 }
@@ -270,7 +270,7 @@ Controls which features the reader UI enables. This book's config:
 
 ```json
 {
-  "title": "English for Secondary Schools: Student’s Book Form Two",
+  "title": "English for Secondary Schools Student’s Book Form Two",
   "bundleVersion": "1",
   "languages": {
     "available": [

@@ -24,13 +24,14 @@ navigation checks.
 
 The print PDF contains unusually fragmented InDesign artwork: individual
 header and footer designs contain hundreds of overlapping masks and image
-shards. Browser compositing of those fragments caused a clipped cover title and
-duplicated dark furniture. The final fixed-layout package therefore uses each
-ADT-extracted full-page render as the authoritative visual layer and keeps the
-positioned semantic text as an invisible accessibility layer. All 96 bundled
-page rasters were byte-compared with their extracted source renders, and all
-96 matched. A second 96-page browser pass confirmed that every page has both
-the authoritative visual layer and semantic text.
+shards. An interim build used extracted page renders to stabilize those
+fragments, but that build failed the anti-facsimile requirement and was
+replaced. The final package uses visible, selectable and searchable positioned
+HTML text plus individual genuine illustrations and vector decoration.
+Text-bearing composite page crops are omitted. A complete packaged scan found
+zero full-page image references, zero page-raster markers, zero composite
+page-crop nodes, and zero transparent paragraphs across all 96 pages. The
+reader exposes 2,096 visible positioned text elements.
 
 The read-aloud accessibility pass excludes repeated running-title decoration,
 printer furniture, and standalone printed folios from narration on all 96
@@ -46,8 +47,7 @@ furniture, and vector ornaments are not narrated. The cover Certificate of
 Approval is described in detail, including certificate number 1583, issuing
 ministry, publication title, author and publisher, ISBN, approval date,
 curriculum context, and signatory. The packaged certificate description has a
-matching audio file and remains available as image alternative text without
-duplicating the authoritative visual page layer.
+matching audio file and remains available as image alternative text.
 
 ## Local artifacts
 

@@ -32,6 +32,13 @@ page rasters were byte-compared with their extracted source renders, and all
 96 matched. A second 96-page browser pass confirmed that every page has both
 the authoritative visual layer and semantic text.
 
+The read-aloud accessibility pass excludes repeated running-title decoration,
+printer furniture, and standalone printed folios from narration on all 96
+pages. Table-of-contents dot leaders remain visual but are silent; terminal
+Roman folios use explicit spoken labels (for example, `v` as “Roman numeral
+5” and `vi` as “Roman numeral 6”). A packaged-runtime scan found no exposed
+running furniture or printed page numbers.
+
 Speech generation was excluded for this conversion profile. The HTML text,
 image captions, glossary, and accessibility assessment remain present.
 

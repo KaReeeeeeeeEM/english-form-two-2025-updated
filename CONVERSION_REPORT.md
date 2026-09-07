@@ -33,11 +33,12 @@ zero full-page image references, zero page-raster markers, zero composite
 page-crop nodes, and zero transparent paragraphs across all 96 pages. The
 reader exposes 2,096 visible positioned text elements.
 
-The recurring top and bottom master-page decorations use tightly cropped
-source-authored bands instead of replaying hundreds of overlapping InDesign
-vector and raster fragments. Pages 2–96 were browser-scanned: each band is
-presentation-only, no extracted image competes inside it, and no horizontal
-overflow remains. The unique cover is excluded from this recurring rule.
+The recurring top and bottom master-page decorations use clean, source-measured
+SVG silhouettes instead of replaying the PDF's dense raster guilloche lines or
+hundreds of overlapping InDesign fragments. Pages 2–96 were browser-scanned:
+each page contains exactly one presentation-only top and bottom ornament, no
+extracted image competes inside either region, and no horizontal overflow
+remains. The unique cover is excluded from this recurring rule.
 
 The read-aloud accessibility pass excludes repeated running-title decoration,
 printer furniture, and standalone printed folios from narration on all 96
